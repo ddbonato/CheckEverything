@@ -10,10 +10,10 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <header>
-    <nav class="navbar bg-body-tertiary">
+    <nav class="navbar bg-body-tertiary" data-bs-theme="dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="./img/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          <img src="./img/logo.png" alt="Logo" width="45" height="36" class="d-inline-block align-text-top">
           CheckScript
         </a>
       </div>
@@ -21,17 +21,29 @@
   </header>
   <body>
 
-    	<h1></h1>
- 	    <p>Página para testes da versão web CheckScript by Daniel Bonato / Helio Schilipak</p>
+ 	  <p>Página para testes da versão web CheckScript by Daniel Bonato / Helio Schilipak</p>
+
+     <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Hostname
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+      <label class="form-check-label" for="flexCheckChecked">
+        Drivers
+      </label>
+    </div>
  	 
  
-       <button class="btn btn-primary" onclick="myFunction()">Try it</button>
+    <button class="btn btn-primary" onclick="myFunction()">Salvar PDF</button>
 
-      <p id="demo">You pressed Cancel!</p>
+    <p id="demo">You pressed Cancel!</p>
 
-      <button class="btn btn-primary" onclick="myFunction2()">Try it</button>
-      <p id="demo2">You pressed OK!</p> 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-      <script src="js/script.js"></script>
+    <button class="btn btn-primary" onclick="myFunction2()">Copiar para Área de transferência</button>
+    <p id="demo2">You pressed OK!</p> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
