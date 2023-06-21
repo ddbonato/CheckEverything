@@ -21,6 +21,7 @@
     
   </header>
   <body>
+     
       <div class="ms-3">
         <p>Página para testes da versão web CheckScript by Daniel Bonato / Helio Schilipak</p>
         <div class="row">
@@ -138,15 +139,25 @@
 
       </div> 
 
-      <div class="ms-3 me-3">
-        <select class="form-select" aria-label="Default select example">
-          <option selected>Secretaria</option>
-          <option value="1">SME</option>
-          <option value="2">SMMA</option>
-          <option value="3">SMOP</option>
-        </select>
+      <div class="mt-3 ms-3 me-3">
+        <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" >
+        <label class="btn btn-outline-primary" for="option1">SME</label>
+        
+        <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+        <label class="btn btn-outline-primary" for="option2">SMMA</label>
+        
+        <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" >
+        <label class="btn btn-outline-primary" for="option3">SMOP</label>
+        
+        <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+        <label class="btn btn-outline-primary" for="option4">SMSAN</label>
       </div>
-      <div class="ms-3 me-3 mb-3">
+
+
+
+      <div class="ms-3 me-3">
+     </div>
+      <div class="fixed-bottom ms-3 mb-3 mt-auto">
         <button class="btn btn-primary" onclick="myFunction()">Salvar PDF</button>
         <button class="btn btn-primary" onclick="myFunction2()">Copiar para Área de transferência</button>        
       </div>
