@@ -139,53 +139,26 @@
 
       </div> 
 
-      <div class="mt-3 ms-3 me-3">
-        <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" >
-        <label class="btn btn-outline-primary" for="option1">SME</label>
         
-        <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-        <label class="btn btn-outline-primary" for="option2">SMMA</label>
-        
-        <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" >
-        <label class="btn btn-outline-primary" for="option3">SMOP</label>
-        
-        <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
-        <label class="btn btn-outline-primary" for="option4">SMSAN</label>
+        <div class="mt-3 ms-3 me-3">
 
-        <input type="radio" class="btn-check" name="options" id="option5" autocomplete="off">
-        <label class="btn btn-outline-primary" for="option5">SMS</label>
-
-        <input type="radio" class="btn-check" name="options" id="option6" autocomplete="off">
-        <label class="btn btn-outline-primary" for="option6">IMT</label>
-
-        <input type="radio" class="btn-check" name="options" id="option7" autocomplete="off">
-        <label class="btn btn-outline-primary" for="option7">SMDT</label>
-
-        <input type="radio" class="btn-check" name="options" id="option8" autocomplete="off">
-        <label class="btn btn-outline-primary" for="option8">FCC</label>
-
-        <input type="radio" class="btn-check" name="options" id="option9" autocomplete="off">
-        <label class="btn btn-outline-primary" for="option9">FAS</label>
-        
-        <input type="radio" class="btn-check" name="options" id="option10" autocomplete="off">
-        <label class="btn btn-outline-primary" for="option10">SMU</label>
-
-        <input type="radio" class="btn-check" name="options" id="option11" autocomplete="off">
-        <label class="btn btn-outline-primary" for="option11">SMTE</label>
-
-        <input type="radio" class="btn-check" name="options" id="option12" autocomplete="off">
-        <label class="btn btn-outline-primary" for="option12">SMELJ</label>
-
-        <input type="radio" class="btn-check" name="options" id="option13" autocomplete="off">
-        <label class="btn btn-outline-primary" for="option13">SMAP</label>
-
-        <input type="radio" class="btn-check" name="options" id="option14" autocomplete="off">
-        <label class="btn btn-outline-primary" for="option14">IPPUC</label>
-
-        <input type="radio" class="btn-check" name="options" id="option15" autocomplete="off">
-        <label class="btn btn-outline-primary" for="option15">FAS</label>
-
-      </div>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Secretaria</option>
+            <option value="1">SME</option>
+            <option value="2">SMMA</option>
+            <option value="3">SMOP</option>
+            <option value="4">SMELJ</option>
+            <option value="5">SMAP</option>
+            <option value="6">IMT</option>
+            <option value="7">IPPUC</option>
+            <option value="8">SMF</option>
+            <option value="9">SMU</option>
+            <option value="10">SMDT</option>
+            <option value="11">FAS</option>
+            <option value="12">SMOP</option>
+          </select>
+        </div>
+      
       <div class="mt-3 ms-3 me-3">
         <p>
           Lista de softwares
@@ -196,9 +169,9 @@
         </p>
       </div>
 
-      <div class="mt-3 ms-3 me-3">
-        <input type="file" class="input-group-prepend" id="inputFile">
-        <button onclick="lerArquivo()" class="input-group-prepend">Exportar informações</button> 
+      <div class="position-relative ms-3">
+        <input type="file" id="inputFile">
+        <button onclick="lerArquivo()">Ler Arquivo</button>
      </div>
       <div class="fixed-bottom ms-3 mb-3 mt-auto">
         <button class="btn btn-primary" onclick="myFunction()">Salvar PDF</button>

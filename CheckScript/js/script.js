@@ -18,5 +18,23 @@ function myFunction2() {
       txt2 = "Cancelado";
     }
     document.getElementById("demo2").innerHTML = txt2;
-  }
+}
+
+function lerArquivo() {
+    const input = document.getElementById('inputFile');
+    const arquivo = input.files[0];
+
+    if (arquivo) {
+      const leitor = new FileReader();
+
+      leitor.onload = function(evento) {
+        const conteudo = evento.target.result;
+        const linhas = conteudo.split('\n').map(linha => linha.trim());
+        
+        console.log(linhas);
+      };
+
+      leitor.readAsText(arquivo);
+    }
+}
 
